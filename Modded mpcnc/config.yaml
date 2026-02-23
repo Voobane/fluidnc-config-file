@@ -171,7 +171,7 @@ sdcard:
 
 # probe:
 #   pin: NO_PIN - IO board - pin: 8 (T2)
-#   toolsetter_pin: NO_PIN
+#   toolsetter_pin: gpio.33
 #   check_mode_start: true
 #   hard_stop: false
 #   probe_hard_limit: false
@@ -186,18 +186,17 @@ start:
   must_home: false
 
 
-
-# 10V:
-  # forward_pin: gpio.15
-  # reverse_pin: gpio.14
-  # pwm_hz: 5000
-  # output_pin: gpio.13
-  # enable_pin: NO_PIN
-  # direction_pin: NO_PIN
-  # disable_with_s0: false
-  # s0_with_disable: true
-  # spinup_ms: 0
-  # spindown_ms: 0
-  # tool_num: 0
-  # speed_map: 0=0.000% 1000=0.000% 24000=100.000%
-  # off_on_alarm: false
+10V:
+  forward_pin: gpio.15
+  reverse_pin: gpio.14
+  pwm_hz: 5000
+  output_pin: gpio.13
+  enable_pin: NO_PIN
+  direction_pin: NO_PIN
+  disable_with_s0: false
+  s0_with_disable: true
+  spinup_ms: 0
+  spindown_ms: 0
+  tool_num: 0
+  speed_map: 0=0.000% 1000=0.000% 24000=100.000%
+  off_on_alarm: false
