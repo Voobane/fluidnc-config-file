@@ -203,3 +203,22 @@ start:
 #   tool_num: 0
 #   speed_map: 0=0.000% 1000=0.000% 24000=100.000%
 #   off_on_alarm: false
+
+
+________________________________________________________
+
+
+
+#uart channel 2 designated for Pendant CYD Dial:
+
+# uart2:
+#   txd_pin: gpio.##
+#   rxd_pin: gpio.##
+#   baud: 1000000
+#   mode: 8N1
+
+# uart_channel2:
+#   report_interval_ms: 75
+#   uart_num: 2
+
+# CYD Pendat Dial:
